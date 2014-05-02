@@ -990,16 +990,8 @@ void loop()
     mouseReport.wheel = 0;
 
 	int i;
-	//for(i=0; i < 3; i++){
-		Serial.write((uint8_t *)&mouseReport, 4);
-		Serial.write((uint8_t *)&nullReport, 4);
-	//}
-/*
-    for (ind=0; ind<20; ind++) {
 	Serial.write((uint8_t *)&mouseReport, 4);
 	Serial.write((uint8_t *)&nullReport, 4);
-    }
-    */
   
   // Delay so we don't swamp the serial port
   delay(5);
